@@ -14,6 +14,6 @@ turbo問題
 ## 正常
 
 ```package.json
-"dev": "next dev --turbo",
+"dev": "next dev",
 
 ```
