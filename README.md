@@ -1,10 +1,19 @@
-# vns_template
+turbo問題
 
-## 注意
+## 翻訳関数が機能しなくなる
 
 ```package.json
 "dev": "next dev --turbo",
 
 ```
 
---turboオプションはi18nの機能が正常に働かなくなるので、つけるのは禁止
+↑
+--turboオプションはi18nの機能が正常に働かなくなる
+
+
+## 正常
+
+```package.json
+"dev": "next dev --turbo",
+
+```
