@@ -3,7 +3,6 @@ import { Metadata } from 'next';
 import { Suspense } from 'react';
 
 import { languages } from '@/app/i18n/settings';
-import Navbar from '@/components/layout/Navbar';
 import { Toaster } from '@/components/ui/Toasts/toaster';
 import { getURL } from '@/utils/helpers';
 import '@/styles/main.css';
@@ -56,11 +55,8 @@ export default async function RootLayout({ children, params: { lng = 'ja' } }) {
   return (
     <html lang={lng} dir={dir(lng)}>
       <body className="bg-black loading">
-        <Navbar />
-        <main
-          className="min-h-[calc(100dvh-4rem)] md:min-h[calc(100dvh-5rem)]"
-          id="skip"
-        >
+        {/* <Navbar /> */}
+        <main className="min-h-[calc(100dvh-4rem)] md:min-h[calc(100dvh-5rem)]" id="skip">
           {children}
         </main>
         {/* <Footer /> */}
